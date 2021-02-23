@@ -27,8 +27,8 @@
   <body class="bg-light">
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-redish py-0  ">
-        <a class="navbar-brand" href="#"><i class=" fab fa-adn text-white fa-2x pl-3"></i></a>
-        <a class="navbar-brand" href="#" >ALG Voyage</i></a>
+        <a class="navbar-brand" href="#"> <i class="fas fa-map-marked-alt pl-2"></i></a>
+        <a class="navbar-brand" href="#" >Mon Tour</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -80,9 +80,7 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-4 ">
-            
-                
+          <div class="col-lg-3 col-md-4 ">      
             <div class="mt-5 mb-3 bg-white border border-default border-3 text-center" style="height: 440px;">
                 <div class="bg-redish " style="height: 100px;"  ></div>
                 <img src="img/1.jpg" height="120" width="120" class="rounded-circle border-lg border-white " style="margin-top: -70px;">
@@ -99,13 +97,13 @@
                     <p  style="font-size: medium; margin-top: -20px;">1300</p>
                     <hr>
 
-                    <a href="" class="text-redish font-weight-bold">Voir Profile</a>
+                    <a href="" class="text-redish font-weight-bold ">Voir Profile</a>
 
 
                 
             </div>
             <div class="mb-3 bg-white">
-                hhhhhhhhh
+                
             </div>
             <div class="mb-3 bg-white">
                 hhhhhhhhh
@@ -114,14 +112,87 @@
                
             
           </div>
-          <div class="col-lg-6 col-md-8 bg-primary">
-            One of three columns
+
+          <div class="col-lg-6 col-md-8 bg-primary mt-5 px-0">
+
+            <div class="d-flex justify-content-between  bg-white align-items-center mb-3 "style="height: 100px;">      
+              <img src="img/1.jpg" height="40" width="40" class="rounded-circle  ml-4" >
+                <div class="d-flex flex-row-reverse align-items-center mr-4">
+                  <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#voyageModal">
+                    Voyage 
+                  </button>
+                  <button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#postModal">
+                     Post
+                  </button>
+                </div>
+            </div> 
           </div>
+  
           <div class="col-lg-3 col-md-4 bg-dark">
             One of three columns
           </div>
-        </div>
     </div>
+    
+
+        <!-- Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea id="postArea" name="w3review" rows="6" cols="60" class="border border-white ml-2" style="resize: none;" placeholder="Ecrire quelque chose "></textarea>
+          </div>
+          <div class=" modal-footer  ">
+
+              <button type="button" class="btn btn-outline-light"><i class="fas fa-map-marker-alt text-redish"></i></button>
+              <button type="button" class="btn btn-outline-light"><i class="fas fa-hashtag text-redish"></i></button>
+              <button type="button" class="btn btn-outline-light"><i class="far fa-image text-redish"></i></button>
+              
+            
+           
+              <button type="button" class="btn btn-danger ml-3">Post</button>
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="voyageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Voyage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea id="postArea" name="w3review" rows="6" cols="60" class="border border-white ml-2" style="resize: none;" placeholder="Ecrire quelque chose "></textarea>
+          </div>
+          <div class=" modal-footer  ">
+
+              <button type="button" class="btn btn-outline-light"><i class="fas fa-map-marker-alt text-redish"></i></button>
+              <button type="button" class="btn btn-outline-light"><i class="fas fa-hashtag text-redish"></i></button>
+              <button type="button" class="btn btn-outline-light"><i class="far fa-image text-redish"></i></button>
+              
+            
+           
+              <button type="button" class="btn btn-danger ml-3">Post</button>
+          
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     <script src="js/main.js"></script>
   </body>
 </html>

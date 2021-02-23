@@ -26,3 +26,7 @@ html {
 .border-lg {
   border: 5px solid #dee2e6;
 }
+
+#postArea:focus{
+  outline: grey auto 0.5px;
+}
